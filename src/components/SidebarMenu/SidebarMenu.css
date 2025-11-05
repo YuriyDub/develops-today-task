@@ -1,0 +1,58 @@
+.dt-sidebar-backdrop {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0);
+	transition: background 220ms;
+	pointer-events: none;
+}
+.dt-sidebar-backdrop.show {
+	background: rgba(0, 0, 0, 0.4);
+	pointer-events: auto;
+}
+.dt-sidebar {
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 320px;
+	transform: translateX(110%);
+	transition: transform 260ms ease;
+	z-index: 1200;
+}
+.dt-sidebar.open {
+	transform: translateX(0);
+}
+.dt-sidebar-inner {
+	background: #fff;
+	height: 100%;
+	box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
+	padding: 16px;
+	overflow: auto;
+}
+.dt-menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dt-menu-item {
+	margin: 6px 0;
+}
+.dt-menu-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #eee;
+	border-left: 2px solid #eee;
+	cursor: pointer;
+}
+.dt-submenu {
+	padding-left: 12px;
+	list-style: none;
+}
+.dt-menu-toggle {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}

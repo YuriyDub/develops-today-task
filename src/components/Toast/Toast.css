@@ -1,0 +1,51 @@
+.dt-toast {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: max-content;
+	padding: 10px 12px;
+	border-radius: 8px;
+	color: #fff;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	transform: translateY(16px);
+	opacity: 0;
+	transition: all 220ms ease;
+}
+.dt-toast.enter {
+	transform: translateY(0);
+	opacity: 1;
+}
+.dt-toast.leave {
+	transform: translateY(10px);
+	opacity: 0;
+}
+.dt-toast-info {
+	background: #2f86eb;
+}
+.dt-toast-success {
+	background: #1aa07a;
+}
+.dt-toast-warning {
+	background: #f0a500;
+}
+.dt-toast-error {
+	background: #d64550;
+}
+.dt-toast-close {
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.dt-toast-bottomRight {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}

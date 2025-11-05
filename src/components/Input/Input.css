@@ -1,0 +1,26 @@
+.dt-input {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+}
+.dt-input-field {
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.dt-input-icon {
+	position: absolute;
+	right: 8px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.dt-input-clear {
+	position: absolute;
+	right: 8px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #666;
+}
